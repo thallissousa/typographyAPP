@@ -9,7 +9,7 @@
 import UIKit
 
 class TableViewController: UIViewController {
-
+    
     @IBOutlet weak var tableView: UITableView!
     @IBOutlet weak var footer: FooterSearchBar!
     @IBOutlet weak var footerBottomConstraint: NSLayoutConstraint!
@@ -42,8 +42,9 @@ class TableViewController: UIViewController {
         tableView.dataSource = self
         
         searchController.searchResultsUpdater = self
-        searchController.obscuresBackgroundDuringPresentation = false
-        searchController.searchBar.placeholder = "Quer buscar TIPO o quê?"
+        searchController.obscuresBackgroundDuringPresentation = true
+        searchController.searchBar.placeholder = "Estou procurando"
+        searchController.searchBar.barTintColor = UIColor.init(red: 40, green: 40, blue: 40, alpha: 1)
         navigationItem.searchController = searchController
         definesPresentationContext = true
     }
@@ -67,48 +68,48 @@ extension TableViewController: UISearchResultsUpdating {
 }
 
 extension TableViewController: UITableViewDelegate{
-    private func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) -> Int {
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         
         selectedIndex = indexPath.item
-        print("selectedIndex1 = ", selectedIndex)
-        print("indexPath1 = ", indexPath.item)
+
         
         performSegue(withIdentifier: "presentDetailSegue", sender: self)
-        if isFiltering {
-            footer.setIsFilteringToShow(filteredItemCount: filteredConcepts.count, of: concepts.count)
-            return filteredConcepts.count
-        }
-        footer.setNotFiltering()
-        return concepts.count
     }
+//        if isFiltering {
+//            footer.setIsFilteringToShow(filteredItemCount: filteredConcepts.count, of: concepts.count)
+//            return filteredConcepts.count
+//        }
+//        footer.setNotFiltering()
+//        return concepts.count
+    
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         guard let detailVC = segue.destination as? DetailViewController
         else {return}
         
-        print("selectedIndex2 = ", selectedIndex)
+        
         detailVC.conceito = concepts[selectedIndex]
-        print("selectedIndex3 = ", selectedIndex)
+        
     }
 }
 
-    
-    extension TableViewController: UITableViewDataSource {
-        func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-            
-            if isFiltering {
-                footer.setIsFilteringToShow(filteredItemCount: filteredConcepts.count, of: concepts.count)
-                return filteredConcepts.count}
-            
-            footer.setNotFiltering()
-            return concepts.count
-        }
+
+extension TableViewController: UITableViewDataSource {
+    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+        
+        if isFiltering {
+            footer.setIsFilteringToShow(filteredItemCount: filteredConcepts.count, of: concepts.count)
+            return filteredConcepts.count}
+        
+        footer.setNotFiltering()
+        return concepts.count
+    }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "tableCells", for: indexPath)
         
         cell.textLabel?.text = filteredConcepts[indexPath.item].title
         return cell}
-    }
+}
 
 
 //    func handleKeyboard(notification: Notification) {
@@ -133,24 +134,24 @@ extension TableViewController: UITableViewDelegate{
 //      })
 //    }
 
-    
-
-        
-        //  var isSearchBarEmpty: Bool {
-        //        return searchController.searchBar.text?.isEmpty ?? true
-        //      }
-        //
-        //      var isFiltering: Bool {
-        //        let searchBarScopeIsFiltering = searchController.searchBar.selectedScopeButtonIndex != 0
-        //        return searchController.isActive && (!isSearchBarEmpty || searchBarScopeIsFiltering)
-        //      }
 
 
 
-    
+//  var isSearchBarEmpty: Bool {
+//        return searchController.searchBar.text?.isEmpty ?? true
+//      }
+//
+//      var isFiltering: Bool {
+//        let searchBarScopeIsFiltering = searchController.searchBar.selectedScopeButtonIndex != 0
+//        return searchController.isActive && (!isSearchBarEmpty || searchBarScopeIsFiltering)
+//      }
+
+
+
+
 
 //    func filterContentSearch
 
 
-    
+
 

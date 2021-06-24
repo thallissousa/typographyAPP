@@ -7,8 +7,9 @@
 
 import UIKit
 
-let images = ["one", "two", "three"]
-let titles = ["O que é iconografia", "Vamos aprender mais", "Aprenda sobre medievalismo"]
+let images = ["Tipografia", "cor tipografica", "alinhamento", "cursiva e simbols", "espaçamento", "kerning", "medieval", "serifa"]
+let titles = ["O que é tipografia?", "Cor tipográfica", "Alinhamento", "Letras Curisivas e Símbolos",
+              "Espaçamento", "Espaçamento entre as letras", "Escrita Medieval", "As serifas"]
 
 class ViewController: UIViewController, UICollectionViewDelegate, UICollectionViewDataSource  {
     
@@ -31,7 +32,7 @@ class ViewController: UIViewController, UICollectionViewDelegate, UICollectionVi
     
     func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
 
-        //fazer uma segue
+
     }
 }
 
