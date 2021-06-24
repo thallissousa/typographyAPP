@@ -7,7 +7,6 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		0668E810268277740042EB20 /* ColletionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0668E80F268277740042EB20 /* ColletionViewController.swift */; };
 		A75345BB2679119A0039D20B /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A75345BA2679119A0039D20B /* AppDelegate.swift */; };
 		A75345BD2679119A0039D20B /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A75345BC2679119A0039D20B /* SceneDelegate.swift */; };
 		A75345BF2679119A0039D20B /* tableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A75345BE2679119A0039D20B /* tableViewController.swift */; };
@@ -21,7 +20,6 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		0668E80F268277740042EB20 /* ColletionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ColletionViewController.swift; sourceTree = "<group>"; };
 		A75345B72679119A0039D20B /* tipoGrafei.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = tipoGrafei.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A75345BA2679119A0039D20B /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		A75345BC2679119A0039D20B /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -77,7 +75,6 @@
 				A75345C82679119C0039D20B /* Info.plist */,
 				A75345D4267A4A7B0039D20B /* FooterSearchBar.swift */,
 				A75345BC2679119A0039D20B /* SceneDelegate.swift */,
-				0668E80F268277740042EB20 /* ColletionViewController.swift */,
 			);
 			path = CaciqueAppZero;
 			sourceTree = "<group>";
@@ -152,7 +149,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				0668E810268277740042EB20 /* ColletionViewController.swift in Sources */,
 				A75345BF2679119A0039D20B /* tableViewController.swift in Sources */,
 				A75345BB2679119A0039D20B /* AppDelegate.swift in Sources */,
 				A75345D5267A4A7B0039D20B /* FooterSearchBar.swift in Sources */,
