@@ -14,6 +14,7 @@ class TableViewController: UIViewController {
     @IBOutlet weak var footer: FooterSearchBar!
     @IBOutlet weak var footerBottomConstraint: NSLayoutConstraint!
     
+    
     var concepts: [TypeConcept] = []
     var filteredConcepts : [TypeConcept] = []
     var selectedIndex: Int = 0
@@ -87,7 +88,7 @@ extension TableViewController: UITableViewDelegate{
         else {return}
         
         
-        detailVC.conceito = concepts[selectedIndex]
+        detailVC.indexDetail = selectedIndex
         
     }
 }
