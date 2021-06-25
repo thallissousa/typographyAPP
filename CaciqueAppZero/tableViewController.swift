@@ -107,7 +107,7 @@ extension TableViewController: UITableViewDataSource {
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "tableCells", for: indexPath)
-        
+        cell.textLabel?.textColor = UIColor.white
         cell.textLabel?.text = filteredConcepts[indexPath.item].title
         return cell}
 }
