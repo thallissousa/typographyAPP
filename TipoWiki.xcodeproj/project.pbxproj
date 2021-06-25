@@ -22,7 +22,7 @@
 
 /* Begin PBXFileReference section */
 		06C75EFD268502720067A8C4 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		A75345B72679119A0039D20B /* tipoGrafei.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = tipoGrafei.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		A75345B72679119A0039D20B /* TipoWiki.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TipoWiki.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A75345BA2679119A0039D20B /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		A75345BC2679119A0039D20B /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 		A75345BE2679119A0039D20B /* tableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = tableViewController.swift; sourceTree = "<group>"; };
@@ -58,7 +58,7 @@
 		A75345B82679119A0039D20B /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				A75345B72679119A0039D20B /* tipoGrafei.app */,
+				A75345B72679119A0039D20B /* TipoWiki.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -85,9 +85,9 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		A75345B62679119A0039D20B /* tipoGrafei */ = {
+		A75345B62679119A0039D20B /* TipoWiki */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = A75345CB2679119C0039D20B /* Build configuration list for PBXNativeTarget "tipoGrafei" */;
+			buildConfigurationList = A75345CB2679119C0039D20B /* Build configuration list for PBXNativeTarget "TipoWiki" */;
 			buildPhases = (
 				A75345B32679119A0039D20B /* Sources */,
 				A75345B42679119A0039D20B /* Frameworks */,
@@ -97,9 +97,9 @@
 			);
 			dependencies = (
 			);
-			name = tipoGrafei;
+			name = TipoWiki;
 			productName = CaciqueAppZero;
-			productReference = A75345B72679119A0039D20B /* tipoGrafei.app */;
+			productReference = A75345B72679119A0039D20B /* TipoWiki.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -116,7 +116,7 @@
 					};
 				};
 			};
-			buildConfigurationList = A75345B22679119A0039D20B /* Build configuration list for PBXProject "tipoGrafei" */;
+			buildConfigurationList = A75345B22679119A0039D20B /* Build configuration list for PBXProject "TipoWiki" */;
 			compatibilityVersion = "Xcode 9.3";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
@@ -129,7 +129,7 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				A75345B62679119A0039D20B /* tipoGrafei */,
+				A75345B62679119A0039D20B /* TipoWiki */,
 			);
 		};
 /* End PBXProject section */
@@ -317,7 +317,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = BR.BM.tipoGrafei;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -337,14 +337,14 @@
 				PRODUCT_BUNDLE_IDENTIFIER = BR.BM.tipoGrafei;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		A75345B22679119A0039D20B /* Build configuration list for PBXProject "tipoGrafei" */ = {
+		A75345B22679119A0039D20B /* Build configuration list for PBXProject "TipoWiki" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				A75345C92679119C0039D20B /* Debug */,
@@ -353,7 +353,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		A75345CB2679119C0039D20B /* Build configuration list for PBXNativeTarget "tipoGrafei" */ = {
+		A75345CB2679119C0039D20B /* Build configuration list for PBXNativeTarget "TipoWiki" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				A75345CC2679119C0039D20B /* Debug */,
