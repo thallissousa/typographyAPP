@@ -38,7 +38,7 @@ class ViewController: UIViewController, UICollectionViewDelegate, UICollectionVi
 
 class PostCell: UICollectionViewCell {
     @IBOutlet weak var background: UIView!
-    @IBOutlet weak var image: UIImageView! //retirar e substituir por um UIButton
+    @IBOutlet weak var image: UIImageView!
     @IBOutlet weak var pTitle: UILabel!
     @IBOutlet weak var pAuthor: UILabel!
     

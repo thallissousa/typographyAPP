@@ -22,7 +22,6 @@
                                 <color key="backgroundColor" red="0.15686275064945221" green="0.15686275064945221" blue="0.15686275064945221" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <color key="separatorColor" red="0.85882352939999995" green="0.80000000000000004" blue="0.37647058820000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <color key="sectionIndexColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
-                                <color key="sectionIndexBackgroundColor" red="0.15686275064945221" green="0.15686275064945221" blue="0.15686275064945221" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <prototypes>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="tableCells" id="FgV-88-nvw">
                                         <rect key="frame" x="0.0" y="24.5" width="414" height="43.5"/>
@@ -63,21 +62,6 @@
                     </view>
                     <navigationItem key="navigationItem" largeTitleDisplayMode="never" id="Yh0-d8-dDo">
                         <nil key="title"/>
-                        <view key="titleView" contentMode="scaleToFill" id="uuD-Sh-bjZ">
-                            <rect key="frame" x="207" y="22" width="0.0" height="0.0"/>
-                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                            <subviews>
-                                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" image="Inline-Logo" translatesAutoresizingMaskIntoConstraints="NO" id="3ww-fg-zxt">
-                                    <rect key="frame" x="-82" y="-25" width="164" height="50"/>
-                                </imageView>
-                            </subviews>
-                            <color key="backgroundColor" systemColor="systemBackgroundColor"/>
-                            <constraints>
-                                <constraint firstItem="3ww-fg-zxt" firstAttribute="top" secondItem="uuD-Sh-bjZ" secondAttribute="top" constant="-25" id="33Y-Bh-51w"/>
-                                <constraint firstItem="3ww-fg-zxt" firstAttribute="centerX" secondItem="uuD-Sh-bjZ" secondAttribute="centerX" id="4c9-Gp-ju6"/>
-                                <constraint firstItem="3ww-fg-zxt" firstAttribute="centerY" secondItem="uuD-Sh-bjZ" secondAttribute="centerY" id="lxW-xu-dqT"/>
-                            </constraints>
-                        </view>
                     </navigationItem>
                     <connections>
                         <outlet property="footer" destination="JU6-kV-LN9" id="sx1-xR-sB7"/>
@@ -131,17 +115,18 @@
                             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             <subviews>
                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="B0C-ta-0k3">
-                                    <rect key="frame" x="-20" y="10" width="42" height="47"/>
+                                    <rect key="frame" x="-17.5" y="10" width="37" height="30"/>
                                     <constraints>
-                                        <constraint firstAttribute="height" constant="47" id="5h6-5Q-fnt"/>
+                                        <constraint firstAttribute="height" constant="30" id="5h6-5Q-fnt"/>
                                     </constraints>
-                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                    <fontDescription key="fontDescription" type="system" weight="light" pointSize="15"/>
                                     <nil key="textColor"/>
                                     <nil key="highlightedColor"/>
                                 </label>
                             </subviews>
                             <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                             <constraints>
+                                <constraint firstAttribute="bottom" secondItem="B0C-ta-0k3" secondAttribute="bottom" constant="10" id="0Xw-Gq-Yz2"/>
                                 <constraint firstItem="B0C-ta-0k3" firstAttribute="top" secondItem="ak0-1S-Oki" secondAttribute="top" constant="10" id="M8X-g9-BrP"/>
                                 <constraint firstItem="B0C-ta-0k3" firstAttribute="centerX" secondItem="ak0-1S-Oki" secondAttribute="centerX" id="XfB-jA-Xp4"/>
                             </constraints>
@@ -157,11 +142,11 @@
             </objects>
             <point key="canvasLocation" x="3461" y="205"/>
         </scene>
-        <!--Item-->
+        <!--Search-->
         <scene sceneID="q5M-mZ-lWh">
             <objects>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="VtR-LO-SeV" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="Item" id="dSU-SW-v9h"/>
+                    <tabBarItem key="tabBarItem" title="Search" image="magnifyingglass" catalog="system" landscapeImage="magnifyingglass" id="dSU-SW-v9h"/>
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" largeTitles="YES" id="bVF-Oz-fvR">
                         <rect key="frame" x="0.0" y="44" width="414" height="96"/>
@@ -220,22 +205,26 @@
                                                     <preferredSymbolConfiguration key="preferredSymbolConfiguration" scale="default"/>
                                                 </imageView>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Tipografia" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gMP-K2-ZfT">
-                                                    <rect key="frame" x="30" y="10" width="93.5" height="24"/>
+                                                    <rect key="frame" x="30" y="10" width="95.5" height="25"/>
                                                     <color key="tintColor" red="0.50588238240000005" green="0.94755244260000004" blue="0.038550965489999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                     <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="20"/>
-                                                    <color key="textColor" red="0.85882352939999995" green="0.80000000000000004" blue="0.37647058820000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                                    <nil key="highlightedColor"/>
+                                                    <color key="textColor" systemColor="systemYellowColor"/>
+                                                    <color key="shadowColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                    <size key="shadowOffset" width="2" height="1"/>
+                                                    <variation key="displayGamut=P3-heightClass=regular-widthClass=regular">
+                                                        <color key="shadowColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                    </variation>
                                                 </label>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="O que é " lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="RXH-Z2-bAJ">
-                                                    <rect key="frame" x="34" y="38" width="57" height="18"/>
+                                                    <rect key="frame" x="30" y="39" width="57" height="18"/>
                                                     <fontDescription key="fontDescription" type="system" weight="light" pointSize="15"/>
-                                                    <color key="textColor" red="0.85882352939999995" green="0.80000000000000004" blue="0.5797647843" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                    <color key="textColor" red="0.86259283140452225" green="0.84321477714068849" blue="0.0010785007158899068" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                             </subviews>
                                             <color key="tintColor" red="0.85882352939999995" green="0.80000000000000004" blue="0.5797647843" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                             <constraints>
-                                                <constraint firstItem="RXH-Z2-bAJ" firstAttribute="leading" secondItem="gMP-K2-ZfT" secondAttribute="leading" constant="4" id="8mJ-TN-ClO"/>
+                                                <constraint firstItem="RXH-Z2-bAJ" firstAttribute="leading" secondItem="gMP-K2-ZfT" secondAttribute="leading" id="8mJ-TN-ClO"/>
                                                 <constraint firstAttribute="bottom" secondItem="2BQ-Sn-Jdb" secondAttribute="bottom" constant="8" id="F70-ZD-WMD"/>
                                                 <constraint firstItem="RXH-Z2-bAJ" firstAttribute="top" secondItem="gMP-K2-ZfT" secondAttribute="bottom" constant="4" id="Tka-mv-qQw"/>
                                                 <constraint firstAttribute="trailing" secondItem="KkT-Vf-2cb" secondAttribute="trailing" constant="20" id="V3t-W8-3Wl"/>
@@ -291,6 +280,7 @@
                         <autoresizingMask key="autoresizingMask"/>
                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <color key="barTintColor" red="0.15686275059999999" green="0.15686275059999999" blue="0.15686275059999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <color key="selectedImageTintColor" red="0.85882352939999995" green="0.80000000000000004" blue="0.37647058820000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                     </tabBar>
                     <connections>
                         <segue destination="SSZ-z4-v10" kind="relationship" relationship="viewControllers" id="Om2-A2-cgD"/>
@@ -305,7 +295,7 @@
         <scene sceneID="MEp-pn-yND">
             <objects>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="SSZ-z4-v10" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="Home" image="star.fill" catalog="system" landscapeImage="star.fill" id="LXi-Nn-RVf">
+                    <tabBarItem key="tabBarItem" title="Home" image="network" catalog="system" landscapeImage="network" id="LXi-Nn-RVf">
                         <color key="badgeColor" red="0.15686275059999999" green="0.15686275059999999" blue="0.15686275059999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                     </tabBarItem>
                     <toolbarItems/>
@@ -325,15 +315,18 @@
         </scene>
     </scenes>
     <inferredMetricsTieBreakers>
-        <segue reference="wZS-1T-VJ8"/>
+        <segue reference="Z2q-nI-epI"/>
     </inferredMetricsTieBreakers>
     <color key="tintColor" red="0.85882352939999995" green="0.80000000000000004" blue="0.37647058820000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
     <resources>
-        <image name="Inline-Logo" width="164" height="49"/>
+        <image name="magnifyingglass" catalog="system" width="128" height="115"/>
+        <image name="network" catalog="system" width="128" height="121"/>
         <image name="one" width="1920" height="1279"/>
-        <image name="star.fill" catalog="system" width="128" height="116"/>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="systemYellowColor">
+            <color red="1" green="0.80000000000000004" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
     </resources>
 </document>

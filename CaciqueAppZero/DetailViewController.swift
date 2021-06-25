@@ -26,7 +26,7 @@ class DetailViewController: UIViewController{
         nameLabel.text = conceito?.text
         self.navigationController?.title = conceito?.title
         tituloTipos.text = conceito?.title
-        tituloTipos.font = UIFont.systemFont(ofSize: 20, weight: .bold)
+        tituloTipos.font = UIFont.systemFont(ofSize: 20, weight: .medium)
         detailImage.image = conceito?.image
         
         

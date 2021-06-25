@@ -17,15 +17,17 @@
                         <subviews>
                             <view contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" translatesAutoresizingMaskIntoConstraints="NO" id="hf7-kw-tvh">
                                 <rect key="frame" x="0.0" y="44" width="414" height="818"/>
+                                <subviews>
+                                    <imageView autoresizesSubviews="NO" contentMode="scaleAspectFit" fixedFrame="YES" image="logo" highlightedImage="LaunchScreen" adjustsImageSizeForAccessibilityContentSizeCategory="YES" translatesAutoresizingMaskIntoConstraints="NO" id="n7j-uQ-sIA">
+                                        <rect key="frame" x="57" y="218" width="279" height="382"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                    </imageView>
+                                </subviews>
                                 <viewLayoutGuide key="safeArea" id="e5x-wi-IcA"/>
                                 <accessibility key="accessibilityConfiguration">
                                     <accessibilityTraits key="traits" image="YES"/>
                                 </accessibility>
                             </view>
-                            <imageView autoresizesSubviews="NO" contentMode="scaleToFill" fixedFrame="YES" image="LaunchScreen" highlightedImage="LaunchScreen" adjustsImageSizeForAccessibilityContentSizeCategory="YES" translatesAutoresizingMaskIntoConstraints="NO" id="n7j-uQ-sIA">
-                                <rect key="frame" x="9" y="177" width="395" height="541"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                            </imageView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" red="0.1764726341" green="0.17646792529999999" blue="0.176468879" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
@@ -44,5 +46,6 @@
     </scenes>
     <resources>
         <image name="LaunchScreen" width="131.66667175292969" height="180.33332824707031"/>
+        <image name="logo" width="1024" height="1024"/>
     </resources>
 </document>
