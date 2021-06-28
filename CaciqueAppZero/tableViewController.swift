@@ -74,6 +74,7 @@ extension TableViewController: UITableViewDelegate{
         
         selectedIndex = indexPath.item
 
+        tableView.deselectRow(at: indexPath, animated: true)
         
         performSegue(withIdentifier: "presentDetailSegue", sender: self)
     }
