@@ -7,9 +7,8 @@
 
 import UIKit
 
-let images = ["Tipografia", "cor tipografica", "alinhamento", "cursiva e simbols", "espaçamento", "kerning", "medieval", "serifa"]
-let titles = ["O que é tipografia?", "Cor tipográfica", "Alinhamento", "Letras Curisivas e Símbolos",
-              "Espaçamento", "Espaçamento entre as letras", "Escrita Medieval", "As serifas"]
+let images = ["Tipografia", "cor tipografica", "alinhamento", "cursiva e simbols", "serifa"]
+let titles = ["O que é tipografia?", "Cor tipográfica", "Alinhamento", "Letras Curisivas e Símbolos", "As serifas"]
 
 class ViewController: UIViewController, UICollectionViewDelegate, UICollectionViewDataSource  {
     @IBOutlet weak var collectionView: UICollectionView!
