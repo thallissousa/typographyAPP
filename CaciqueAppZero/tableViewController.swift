@@ -42,13 +42,14 @@ class TableViewController: UIViewController {
         concepts.append(TypeConcept(title: "Leiturabilidade", text: "A leiturabilidade é a capacidade de ler as palavras em diversas linhas do texto. Quando temos um texto em que as palavras estão muito próximas ou muito separadas, o que está sendo afetado é a nossa capacidade de leiturabilidade. Isto significa que, em uma identidade visual bem estabelecida, todas as informações apresentadas devem ser de fácil compreensão e leitura.",color: .systemBackground, image: UIImage(named: "leiturabilidade") ?? UIImage()))
         concepts.append(TypeConcept(title: "Pregnância", text: "A pregnância é um outro conceito do design que se aplica, fortemente, ao estudo de tipografia. Este conceito foi definido por Lucy Niemeyer como uma “qualidade de um caractére ou símbolo que faz com que ele seja visível separadamente do seu entorno”.  Segundo esta definição, um texto relevante deve ter destaque diante das outras coisas que estão sendo apresentadas ao usuário.",color: .systemBackground, image: UIImage(named: "pregnancia") ?? UIImage()))
         concepts.append(TypeConcept(title: "Vernáculo", text: "A Tipografia Vernacular pode ser definida como uma arte gráfica de composição de caracteres realizada por profissionais sem conhecimento formal ou acadêmico. As produções vernaculares estão muito relacionadas às culturas de cada país, cidade ou estado, e são símbolos que marcam o ofício de algum tipo de identidade visual. Um exemplo muito simples de Tipografia Vernacular pode ser visto em placas de Preços e Produtos em supermercados.",color: .systemBackground, image: UIImage(named: "vernaculo") ?? UIImage()))
+
         
         filteredConcepts = concepts
         tableView.delegate = self
         tableView.dataSource = self
         
         searchController.searchResultsUpdater = self
-        searchController.obscuresBackgroundDuringPresentation = true
+        searchController.obscuresBackgroundDuringPresentation = false
         searchController.searchBar.placeholder = "Estou procurando"
         searchController.searchBar.barTintColor = UIColor.init(red: 40, green: 40, blue: 40, alpha: 1)
         searchController.searchBar.tintColor = UIColor.white
