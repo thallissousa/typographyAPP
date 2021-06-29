@@ -14,7 +14,8 @@ class DetailViewController: UIViewController{
     var nomeDetail: String!
     var indexDetail: Int!
     
-    @IBOutlet weak var nameLabel: UILabel!
+
+    @IBOutlet weak var textoLabel: UITextView!
     @IBOutlet weak var tituloTipos: UILabel!
     @IBOutlet weak var detailImage: UIImageView!
     
@@ -37,15 +38,12 @@ class DetailViewController: UIViewController{
         for i in 0..<concepts.count{
             if nomeDetail == concepts[i].title {
                 indexDetail=i
-                print(indexDetail)
                 break
             }
         }
         
-        
-        nameLabel.text = concepts[indexDetail].text
+        textoLabel.text = concepts[indexDetail].text
         tituloTipos.text = concepts[indexDetail].title
-        tituloTipos.font = UIFont.systemFont(ofSize: 20, weight: .medium)
         detailImage.image = concepts[indexDetail].image
         
         
