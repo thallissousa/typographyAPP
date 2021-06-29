@@ -8,7 +8,7 @@
 import UIKit
 
 let images = ["Tipografia", "cor tipografica", "alinhamento", "cursiva e simbols", "serifa"]
-let titles = ["O que é tipografia?", "Cor tipográfica", "Alinhamento", "Letras Curisivas e Símbolos", "As serifas"]
+let titles = ["O que é tipografia?", "Cor tipográfica", "Alinhamento", "Cursiva e Symbol", "As Serifas"]
 
 class ViewController: UIViewController, UICollectionViewDelegate, UICollectionViewDataSource  {
     @IBOutlet weak var collectionView: UICollectionView!
@@ -29,7 +29,7 @@ class ViewController: UIViewController, UICollectionViewDelegate, UICollectionVi
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         if let destination = segue.destination as? DetailViewController, let index = collectionView.indexPathsForSelectedItems?.first{
-            destination.indexDetail = index.row
+            destination.nomeDetail = titles[index.row]
         }
     }
     
