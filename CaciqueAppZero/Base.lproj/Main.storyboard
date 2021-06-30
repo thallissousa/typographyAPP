@@ -85,12 +85,9 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="B0C-ta-0k3">
-                                <rect key="frame" x="20" y="377" width="374" height="40"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="40" id="5h6-5Q-fnt"/>
-                                </constraints>
-                                <fontDescription key="fontDescription" type="boldSystem" pointSize="32"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="B0C-ta-0k3">
+                                <rect key="frame" x="20" y="377" width="374" height="36"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="30"/>
                                 <color key="textColor" red="0.85695523019999997" green="0.80425280330000004" blue="0.37636771800000002" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                 <nil key="highlightedColor"/>
                             </label>
@@ -103,7 +100,7 @@
                                 </constraints>
                             </imageView>
                             <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="gdY-HO-GiZ">
-                                <rect key="frame" x="20" y="425" width="374" height="378"/>
+                                <rect key="frame" x="20" y="421" width="374" height="382"/>
                                 <color key="backgroundColor" red="0.15686407690000001" green="0.15686029200000001" blue="0.156862855" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                 <string key="text">Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda.</string>
                                 <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -139,11 +136,11 @@
             </objects>
             <point key="canvasLocation" x="3460.8695652173915" y="204.91071428571428"/>
         </scene>
-        <!--Search-->
+        <!--Conteúdos-->
         <scene sceneID="q5M-mZ-lWh">
             <objects>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="VtR-LO-SeV" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="Search" image="magnifyingglass" catalog="system" landscapeImage="magnifyingglass" id="dSU-SW-v9h"/>
+                    <tabBarItem key="tabBarItem" title="Conteúdos" image="list.dash" catalog="system" landscapeImage="list.dash" id="dSU-SW-v9h"/>
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="bVF-Oz-fvR">
                         <rect key="frame" x="0.0" y="44" width="414" height="44"/>
@@ -163,7 +160,7 @@
             </objects>
             <point key="canvasLocation" x="1177" y="206"/>
         </scene>
-        <!--Discover-->
+        <!--Descubra-->
         <scene sceneID="P3Z-mr-kvR">
             <objects>
                 <viewController id="phF-yT-KUP" customClass="ViewController" customModule="TipoWiki" customModuleProvider="target" sceneMemberID="viewController">
@@ -266,7 +263,7 @@
                             <constraint firstItem="Dfa-cQ-SFe" firstAttribute="top" secondItem="vQu-gZ-4za" secondAttribute="top" id="dW6-g0-JID"/>
                         </constraints>
                     </view>
-                    <navigationItem key="navigationItem" title="Discover" leftItemsSupplementBackButton="YES" largeTitleDisplayMode="always" id="s1P-7M-OyT"/>
+                    <navigationItem key="navigationItem" title="Descubra" leftItemsSupplementBackButton="YES" largeTitleDisplayMode="always" id="s1P-7M-OyT"/>
                     <connections>
                         <outlet property="collectionView" destination="Dfa-cQ-SFe" id="6tb-qn-THC"/>
                     </connections>
@@ -297,11 +294,11 @@
             </objects>
             <point key="canvasLocation" x="1177" y="-605"/>
         </scene>
-        <!--Home-->
+        <!--Descubra-->
         <scene sceneID="MEp-pn-yND">
             <objects>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="SSZ-z4-v10" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="Home" image="network" catalog="system" landscapeImage="network" id="LXi-Nn-RVf">
+                    <tabBarItem key="tabBarItem" title="Descubra" image="network" catalog="system" landscapeImage="network" id="LXi-Nn-RVf">
                         <color key="badgeColor" red="0.15686275059999999" green="0.15686275059999999" blue="0.15686275059999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                     </tabBarItem>
                     <toolbarItems/>
@@ -325,11 +322,11 @@
         </scene>
     </scenes>
     <inferredMetricsTieBreakers>
-        <segue reference="wZS-1T-VJ8"/>
+        <segue reference="Z2q-nI-epI"/>
     </inferredMetricsTieBreakers>
     <color key="tintColor" red="0.85882352939999995" green="0.80000000000000004" blue="0.37647058820000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
     <resources>
-        <image name="magnifyingglass" catalog="system" width="128" height="115"/>
+        <image name="list.dash" catalog="system" width="128" height="85"/>
         <image name="network" catalog="system" width="128" height="121"/>
         <image name="one" width="1920" height="1279"/>
         <systemColor name="systemYellowColor">
