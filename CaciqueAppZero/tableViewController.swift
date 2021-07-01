@@ -17,7 +17,7 @@ class TableViewController: UIViewController {
     
     var concepts: [TypeConcept] = []
     var filteredConcepts : [TypeConcept] = []
-    var selectedIndex: Int = 0
+    var nomeIndex: String!
     let searchController = UISearchController(searchResultsController: nil)
     var isSearchBarEmpty: Bool {
         return searchController.searchBar.text?.isEmpty ?? true
@@ -77,8 +77,8 @@ extension TableViewController: UISearchResultsUpdating {
 
 extension TableViewController: UITableViewDelegate{
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-        
-        selectedIndex = indexPath.item
+
+        nomeIndex = filteredConcepts[indexPath.item].title
 
         tableView.deselectRow(at: indexPath, animated: true)
         
@@ -96,7 +96,7 @@ extension TableViewController: UITableViewDelegate{
         else {return}
         
         
-        detailVC.indexDetail = selectedIndex
+        detailVC.nomeDetail = nomeIndex
         
     }
 }

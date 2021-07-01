@@ -195,7 +195,7 @@
                                                     </constraints>
                                                 </view>
                                                 <imageView clipsSubviews="YES" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" preservesSuperviewLayoutMargins="YES" image="one" adjustsImageSizeForAccessibilityContentSizeCategory="YES" translatesAutoresizingMaskIntoConstraints="NO" id="KkT-Vf-2cb">
-                                                    <rect key="frame" x="20" y="10" width="371" height="367"/>
+                                                    <rect key="frame" x="20" y="10" width="363" height="367"/>
                                                     <color key="backgroundColor" red="0.15686275059999999" green="0.15686275059999999" blue="0.15686275059999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                     <constraints>
                                                         <constraint firstAttribute="width" constant="350" id="4KE-OI-cfA"/>
@@ -235,6 +235,7 @@
                                                 <constraint firstItem="KkT-Vf-2cb" firstAttribute="leading" secondItem="nGO-9k-1M9" secondAttribute="leading" constant="20" id="gzX-h7-MjV"/>
                                                 <constraint firstAttribute="bottom" secondItem="KkT-Vf-2cb" secondAttribute="bottom" constant="5" id="oPd-0E-Hcz"/>
                                                 <constraint firstItem="KkT-Vf-2cb" firstAttribute="leadingMargin" secondItem="nGO-9k-1M9" secondAttribute="leading" constant="20" id="sF0-p1-L14"/>
+                                                <constraint firstAttribute="trailingMargin" secondItem="KkT-Vf-2cb" secondAttribute="trailing" constant="20" id="uGW-D7-Idt"/>
                                             </constraints>
                                         </collectionViewCellContentView>
                                         <color key="backgroundColor" red="0.15686275059999999" green="0.15686275059999999" blue="0.15686275059999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
